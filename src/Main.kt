@@ -32,6 +32,9 @@ fun main() {
     printNumberSign(-10)
     printNumberSign(10)
     printNumberSign(0)
+
+    println("\nЗадание 5")
+    printMultiplesOfThree()
 }
 
 // Задание 2. Написать метод, которому в качестве параметра передается строка,
@@ -55,5 +58,18 @@ private fun printNumberSign(number: Int) {
         println("Число $number отрицательное")
     } else {
         println("Число равно нулю")
+    }
+}
+
+// Задание 5. Написать метод, который выводит последовательность чисел от 1000 до 0, кратных 3
+private fun printMultiplesOfThree() {
+    var number = 1000
+
+    while (number >= 0) {
+        if (number % 3 == 0) {
+            println(number)
+        }
+
+        number--
     }
 }
