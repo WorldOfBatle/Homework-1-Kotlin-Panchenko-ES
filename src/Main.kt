@@ -27,6 +27,11 @@ fun main() {
     println("Число -10 отрицательное: ${isNegative(-10)}")
     println("Число 10 отрицательное: ${isNegative(10)}")
     println("Число 0 отрицательное: ${isNegative(0)}")
+
+    println("\nЗадание 4")
+    printNumberSign(-10)
+    printNumberSign(10)
+    printNumberSign(0)
 }
 
 // Задание 2. Написать метод, которому в качестве параметра передается строка,
@@ -39,4 +44,16 @@ private fun printGreeting(name: String) {
 // Метод должен вернуть true, если число отрицательное, и вернуть false если положительное.
 private fun isNegative(number: Int): Boolean {
     return number < 0
+}
+
+// Задание 4. Написать метод, которому в качестве параметра передается целое число,
+// метод должен напечатать в консоль, положительное ли число передали или отрицательное.
+private fun printNumberSign(number: Int) {
+    if (number > 0) {
+        println("Число $number положительное")
+    } else if (number < 0) {
+        println("Число $number отрицательное")
+    } else {
+        println("Число равно нулю")
+    }
 }
