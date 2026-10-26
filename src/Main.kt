@@ -19,4 +19,13 @@ fun main() {
     println("Char: $charValue")
     println("Boolean: $booleanValue")
     println("String: $stringValue")
+
+    println("\nЗадание 2")
+    printGreeting("Евгений")
+}
+
+// Задание 2. Написать метод, которому в качестве параметра передается строка,
+// обозначающая имя. Метод должен вывести в консоль сообщение «Привет, указанное_имя!».
+private fun printGreeting(name: String) {
+    println("Привет, $name!")
 }
